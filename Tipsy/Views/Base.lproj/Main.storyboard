@@ -69,6 +69,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKR-yv-qwR">
                                                                 <rect key="frame" x="0.0" y="0.0" width="111.5" height="54"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                                <color key="tintColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="0%">
                                                                     <color key="titleColor" red="0.0015832295179999999" green="0.69012552500000002" blue="0.42076003550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -79,11 +80,11 @@
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OL0-xK-EiT">
                                                                 <rect key="frame" x="131.5" y="0.0" width="111" height="54"/>
-                                                                <color key="backgroundColor" red="0.0015832295179999999" green="0.69012552500000002" blue="0.42076003550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                                <color key="tintColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="10%">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ssi-q9-XPs"/>
@@ -92,6 +93,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fk-cm-QUM">
                                                                 <rect key="frame" x="262.5" y="0.0" width="111.5" height="54"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                                <color key="tintColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="20%">
                                                                     <color key="titleColor" red="0.0015832295179999999" green="0.69012552500000002" blue="0.42076003550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
