@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Calculator View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tipsy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CalculatorViewController" customModule="Tipsy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,6 +73,9 @@
                                                                 <state key="normal" title="0%">
                                                                     <color key="titleColor" red="0.0015832295179999999" green="0.69012552500000002" blue="0.42076003550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ki4-Nb-eYB"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OL0-xK-EiT">
                                                                 <rect key="frame" x="131.5" y="0.0" width="111" height="54"/>
@@ -82,6 +85,9 @@
                                                                 <state key="normal" title="10%">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ssi-q9-XPs"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fk-cm-QUM">
                                                                 <rect key="frame" x="262.5" y="0.0" width="111.5" height="54"/>
@@ -90,6 +96,9 @@
                                                                 <state key="normal" title="20%">
                                                                     <color key="titleColor" red="0.0015832295179999999" green="0.69012552500000002" blue="0.42076003550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iVq-h7-cd2"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -111,6 +120,9 @@
                                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minimumValue="2" maximumValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="Jmx-EG-1gi">
                                                                 <rect key="frame" x="212" y="0.0" width="162" height="32"/>
                                                                 <color key="tintColor" red="0.0015832295179999999" green="0.69012552500000002" blue="0.42076003550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <connections>
+                                                                    <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="MBf-it-kTV"/>
+                                                                </connections>
                                                             </stepper>
                                                         </subviews>
                                                     </stackView>
@@ -128,6 +140,9 @@
                                                 <state key="normal" title="Calculate">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IxL-Fr-VfN"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.84472733739999994" green="0.9765493274" blue="0.92192536589999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -156,6 +171,13 @@
                             <constraint firstItem="bBd-5u-80L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uyf-PX-PqJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="billTextField" destination="9MI-Ae-hxI" id="KxL-IL-ZSs"/>
+                        <outlet property="splitNumberLabel" destination="J17-ER-mms" id="urp-Ul-e09"/>
+                        <outlet property="tenPctButton" destination="OL0-xK-EiT" id="PB1-7N-3cf"/>
+                        <outlet property="twentyPctButton" destination="5fk-cm-QUM" id="aJh-lT-SXQ"/>
+                        <outlet property="zeroPctButton" destination="kKR-yv-qwR" id="ZZo-Cy-aqI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
