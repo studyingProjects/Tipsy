@@ -37,7 +37,7 @@
                                                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="textColor" red="0.0" green="0.69019607843137254" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
@@ -176,6 +176,7 @@
                     <connections>
                         <outlet property="billTextField" destination="9MI-Ae-hxI" id="KxL-IL-ZSs"/>
                         <outlet property="splitNumberLabel" destination="J17-ER-mms" id="urp-Ul-e09"/>
+                        <outlet property="splitStepper" destination="Jmx-EG-1gi" id="r3s-PM-Ef8"/>
                         <outlet property="tenPctButton" destination="OL0-xK-EiT" id="PB1-7N-3cf"/>
                         <outlet property="twentyPctButton" destination="5fk-cm-QUM" id="aJh-lT-SXQ"/>
                         <outlet property="zeroPctButton" destination="kKR-yv-qwR" id="ZZo-Cy-aqI"/>
