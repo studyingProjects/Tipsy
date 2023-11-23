@@ -180,6 +180,7 @@
                         <outlet property="tenPctButton" destination="OL0-xK-EiT" id="PB1-7N-3cf"/>
                         <outlet property="twentyPctButton" destination="5fk-cm-QUM" id="aJh-lT-SXQ"/>
                         <outlet property="zeroPctButton" destination="kKR-yv-qwR" id="ZZo-Cy-aqI"/>
+                        <segue destination="HNx-dq-IxB" kind="presentation" identifier="goToResult" id="iX0-aS-Zv0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -191,26 +192,26 @@
             <objects>
                 <viewController id="HNx-dq-IxB" customClass="ResultsViewController" customModule="Tipsy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QdD-mc-Myb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eCF-AA-s5M" userLabel="BackGroundStack View">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LH8-kK-ZYg" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="384"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="379.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Akk-7u-QQ2" userLabel="Top Stack View">
-                                                <rect key="frame" x="50" y="78" width="314" height="256"/>
+                                                <rect key="frame" x="50" y="30" width="314" height="299.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total per person" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78t-ug-aOf">
-                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="64"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="75"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="56.32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rG9-bt-Wwt" userLabel="Total label">
-                                                        <rect key="frame" x="0.0" y="64" width="314" height="192"/>
+                                                        <rect key="frame" x="0.0" y="75" width="314" height="224.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                                         <color key="textColor" red="0.0015832295179999999" green="0.69012552500000002" blue="0.42076003550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -227,7 +228,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzg-jC-18Z" userLabel="Bottom View">
-                                        <rect key="frame" x="0.0" y="384" width="414" height="512"/>
+                                        <rect key="frame" x="0.0" y="379.5" width="414" height="506.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split between 2 people, with 10% tip" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLm-ut-udh">
                                                 <rect key="frame" x="50" y="10" width="314" height="100"/>
@@ -239,7 +240,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEB-hp-jOB">
-                                                <rect key="frame" x="82" y="428" width="250" height="50"/>
+                                                <rect key="frame" x="82" y="456.5" width="250" height="50"/>
                                                 <color key="backgroundColor" red="0.0015832295179999999" green="0.69012552500000002" blue="0.42076003550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="0IL-Ab-IfI"/>
@@ -283,8 +284,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="a" destination="rG9-bt-Wwt" id="PPS-P8-1KR"/>
-                        <outlet property="labelName" destination="rG9-bt-Wwt" id="E5U-oO-7NM"/>
                         <outlet property="settingsLabel" destination="OLm-ut-udh" id="Vez-4H-PXe"/>
                         <outlet property="totalLabel" destination="rG9-bt-Wwt" id="41p-jP-kYU"/>
                     </connections>

@@ -44,9 +44,23 @@ class CalculatorViewController: UIViewController {
         totalAmount = Double(billTextField.text!)
         
         result = (totalAmount ?? 0) * (1 + (tip ?? -1)) / splitCount
-        print(String(format: "%.2f", result))
+        
+        if result != 0 {
+            performSegue(withIdentifier: "goToResult", sender: self)
+        }
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToResult" {
+            let destinationVC = segue.destination as! ResultsViewController
+            destinationVC.result = String(format: "%.2f", result)
+            destinationVC.tip = String(format: "%.0f", (tip ?? 0) * 100)
+            destinationVC.splitCount = splitNumberLabel.text!
+        }
+    }
+    
+    
     
 }
 

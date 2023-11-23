@@ -12,14 +12,19 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var settingsLabel: UILabel!
     
-    
+    var result: String?
+    var splitCount = "2"
+    var tip: String = "0"
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        totalLabel.text = result
+        settingsLabel.text = "Split between \(splitCount) people, with \(tip)%"
     }
         
     @IBAction func recalculatePressed(_ sender: UIButton) {
+        dismiss(animated: true)
     }
     
     
